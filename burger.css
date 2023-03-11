@@ -11,7 +11,14 @@ header {
   z-index: 2;
   overflow: hidden;
 }
-
+.menu_li {
+  margin-bottom: 50px;
+}
+.menu_btn_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .menu-btn span {
   width: 30px;
   height: 2px;
@@ -50,10 +57,23 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 15px;
-  background: #ffefba;
+  padding: 50px 20px;
+  background: #fff;
   transform: translateX(-100%);
   transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.burger_link {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .menu.active {

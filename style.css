@@ -148,6 +148,7 @@ table {
   line-height: 24px;
   color: #000000;
   margin-right: 50px;
+  text-decoration: none;
 }
 .home {
   background: #ffffff;
@@ -187,7 +188,7 @@ table {
 }
 .about {
   background: #000000;
-  padding: 100px 0;
+  padding: 150px 0;
 }
 .about_title {
   font-family: "Manrope";
@@ -287,7 +288,8 @@ table {
   box-shadow: 0px 24px 32px rgba(219, 222, 225, 0.2);
   border-radius: 24px;
   padding: 30px;
-  width: 300px;
+  max-width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -385,7 +387,8 @@ table {
   border-color: inherit;
   background-color: transparent;
   border: 0;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
 }
 .contact_img {
   width: 100%;
@@ -432,6 +435,7 @@ table {
 }
 
 /* ------------------------- */
+
 @media screen and (max-width: 900px) {
   .about_wrapper {
     flex-direction: column;
@@ -446,6 +450,19 @@ table {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 50px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .features_cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    justify-items: center;
   }
 }
 @media screen and (max-width: 750px) {
@@ -464,6 +481,13 @@ table {
   }
   .text_features {
     font-size: 40px;
+  }
+  .footer_text_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_text {
+    margin-bottom: 10px;
   }
 }
 
@@ -487,5 +511,10 @@ table {
     column-gap: 50px;
     row-gap: 50px;
     justify-items: center;
+  }
+}
+@media screen and (max-width: 550px) {
+  .features {
+    padding: 20px;
   }
 }
