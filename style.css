@@ -282,17 +282,25 @@ table {
   text-align: center;
 }
 /* ------ */
+.features_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 50px;
+  margin-bottom: 50px;
+}
 .features_card {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.03);
   box-shadow: 0px 24px 32px rgba(219, 222, 225, 0.2);
   border-radius: 24px;
-  padding: 30px;
+  padding: 30px 0px 30px 0px;
   max-width: 400px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 }
 .features_card_title {
   font-family: "Manrope";
@@ -314,12 +322,6 @@ table {
 }
 .features_img {
   margin-bottom: 20px;
-}
-.features_cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 50px;
-  margin-bottom: 50px;
 }
 
 /* ------- */
@@ -450,6 +452,7 @@ table {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 50px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -516,5 +519,26 @@ table {
 @media screen and (max-width: 550px) {
   .features {
     padding: 20px;
+  }
+  .contact_title {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 62px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 40px;
+  }
+  .contact_subtitle {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    color: #8d8f9a;
+    max-width: 500px;
+    margin-bottom: 40px;
   }
 }
