@@ -300,7 +300,6 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 20px;
 }
 .features_card_title {
   font-family: "Manrope";
@@ -370,6 +369,7 @@ table {
   max-width: 400px;
   padding: 10px;
   margin-bottom: 120px;
+  width: 100%;
 }
 .button_input {
   font-family: "Manrope";
@@ -391,9 +391,13 @@ table {
   border: 0;
   max-width: 380px;
   width: 100%;
+  padding: 0 10px;
 }
 .contact_img {
   width: 100%;
+}
+.contact {
+  padding: 0 20px;
 }
 /* ---------------- */
 .footer {
@@ -432,8 +436,8 @@ table {
 .about_wrapper_img {
   width: 100%;
 }
-.features {
-  padding: 20px;
+.footer_text {
+  margin: 20px;
 }
 
 /* ------------------------- */
@@ -452,7 +456,7 @@ table {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     row-gap: 50px;
-    padding: 30px;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 850px) {
@@ -474,6 +478,9 @@ table {
   }
   .home {
     padding: 0 20px;
+  }
+  .menu-btn {
+    display: block;
   }
   .about_title {
     font-size: 40px;
@@ -540,5 +547,25 @@ table {
     color: #8d8f9a;
     max-width: 500px;
     margin-bottom: 40px;
+  }
+  .main_title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .main_text {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #8d8f9a;
+    margin-bottom: 50px;
+  }
+  .about_title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
